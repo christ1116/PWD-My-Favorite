@@ -1,147 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  background: radial-gradient(circle at top center, #001219, #000814);
+  color: #e0f7fa;
 }
 
 body {
-    font-family: 'Special Elite', cursive;
-    background: #fcf8ec url('https://www.transparenttextures.com/patterns/cardboard-flat.png');
-    color: #2c2c2c;
-    padding: 60px 20px;
-    line-height: 1.6;
-    text-align: center;
-    transform: rotate(0.02deg); /* tiny imperfection */
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  background-blend-mode: screen;
+  text-align: center;
+  overflow-x: hidden;
 }
 
-/* Header with torn-paper effect */
+/* Aurora-inspired header */
 header {
-    background: #f5deb3;
-    border: 3px dashed #8b5e3c;
-    padding: 30px;
-    font-size: 34px;
-    margin-bottom: 40px;
-    transform: rotate(-1deg);
-    box-shadow: 4px 6px 0 #d2b48c;
+  background: linear-gradient(90deg, rgba(0,212,255,0.3), rgba(9,9,121,0.4), rgba(0,212,255,0.3));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 50px 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #aafcff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  box-shadow: 0 0 30px rgba(0,255,255,0.1);
 }
 
-/* Funky nav like taped-on labels */
+/* Aurora navigation with hover neon light effect */
 nav {
-    margin: 20px auto;
-    background: #fff8e7;
-    padding: 10px;
-    border: 2px dotted #b58b61;
-    max-width: fit-content;
-    transform: rotate(0.8deg);
-    box-shadow: 3px 3px 0 #c5a880;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 12px;
-    justify-content: center;
+nav a {
+  text-decoration: none;
+  color: #8ecae6;
+  font-weight: bold;
+  padding: 12px 20px;
+  background: rgba(0,0,0,0.4);
+  border: 2px solid #00b4d8;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #5e3c2c;
-    background: #fff0db;
-    padding: 8px 14px;
-    border: 1px solid #c8a275;
-    border-radius: 6px;
-    font-weight: bold;
-    box-shadow: 2px 2px 0 #ae845c;
-    transition: transform 0.2s ease;
+nav a:hover {
+  background: #00b4d8;
+  color: #001219;
+  box-shadow: 0 0 20px #90e0ef;
 }
 
-nav ul li a:hover {
-    transform: scale(1.1) rotate(-1deg);
-    background: #eedcc3;
-}
-
-/* Journal-style section box */
+/* Frost-glass panels */
 section {
-    background: #fffdf8;
-    border: 2px solid #ccc2b4;
-    padding: 30px;
-    margin: 30px auto;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 6px 6px 0 #d4c2a4;
-    transform: rotate(-0.5deg);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255,255,255,0.08);
+  padding: 40px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 800px;
+  color: #e0fbfc;
 }
 
-/* Typewriter headings */
+/* Sci-fi aurora headers */
 h2, h3 {
-    font-family: 'Special Elite', cursive;
-    color: #4b3e2d;
+  color: #90e0ef;
+  text-shadow: 0 0 5px #8ecae6;
+  letter-spacing: 1px;
 }
 
 h2 {
-    font-size: 26px;
-    margin-bottom: 10px;
+  font-size: 28px;
 }
 
 h3 {
-    font-size: 20px;
-    margin-top: 25px;
+  font-size: 22px;
 }
 
-/* Polaroid-style images */
+/* Images with frosted glow frame */
 img {
-    max-width: 100%;
-    width: 280px;
-    margin: 20px;
-    padding: 12px;
-    background: #fff;
-    border: 3px solid #e0d4bd;
-    box-shadow: 8px 8px 0 #cab08a;
-    transform: rotate(-2deg);
+  max-width: 100%;
+  width: 320px;
+  border-radius: 20px;
+  border: 3px solid rgba(0,255,255,0.3);
+  box-shadow: 0 0 15px rgba(0,255,255,0.3);
+  margin-top: 20px;
+  transition: transform 0.4s ease;
 }
 
-/* Labels / tags */
+img:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+/* Tags like frozen capsules */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
 ul li {
-    display: inline-block;
-    background: #e8dbc6;
-    color: #3e3224;
-    padding: 6px 12px;
-    margin: 5px;
-    border-radius: 4px;
-    border: 1px solid #b99b76;
-    font-size: 13px;
+  display: inline-block;
+  background: rgba(0,212,255,0.15);
+  border: 1px solid #90e0ef;
+  color: #caf0f8;
+  padding: 8px 16px;
+  margin: 6px;
+  border-radius: 30px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.1);
 }
 
-/* Audio player with cassette player vibes */
+/* Audio player ice block */
 audio {
-    width: 100%;
-    max-width: 440px;
-    margin: 30px auto;
-    border: 3px dashed #a8906f;
-    background: #fefaf2;
-    padding: 14px;
-    box-shadow: 5px 5px 0 #cab08a;
+  width: 100%;
+  max-width: 420px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #00b4d8;
+  border-radius: 14px;
+  margin-top: 30px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.1);
 }
 
-/* YouTube embed looks like old screen */
+/* YouTube embed in snowy screen */
 .youtube-embed {
-    width: 100%;
-    max-width: 520px;
-    height: 300px;
-    border: 5px double #a47148;
-    margin-top: 40px;
-    box-shadow: 10px 10px 0 #ba9d7b;
-    background: #fff;
-    transform: rotate(1deg);
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  margin: 40px auto;
+  border: 4px solid #90e0ef;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0,255,255,0.2);
+  background: rgba(0, 0, 0, 0.5);
 }
 
-/* Footer with envelope-style trim */
+/* Footer with aurora glow */
 footer {
-    background: #e5cbae;
-    padding: 20px;
-    font-weight: bold;
-    margin-top: 60px;
-    border-top: 3px dashed #a47148;
-    transform: rotate(-0.6deg);
+  padding: 30px;
+  margin-top: 60px;
+  color: #aafcff;
+  background: linear-gradient(90deg, rgba(0,212,255,0.2), rgba(9,9,121,0.2), rgba(0,212,255,0.2));
+  box-shadow: 0 0 20px rgba(0,255,255,0.15);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-weight: 400;
+  text-shadow: 0 0 8px #00ffff;
 }
